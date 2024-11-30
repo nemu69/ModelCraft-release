@@ -1,0 +1,4481 @@
+[
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 68,
+      "Y": 99
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 18,
+      "Y": 63
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 67
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 67
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 67
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 67
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 67
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 66
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "ComedyMovie"
+      },
+      "X": 15,
+      "Y": 66
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Cinema"
+      },
+      "X": 15,
+      "Y": 66
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 0,
+      "Y": 57
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 0,
+      "Y": 57
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 920.6875,
+      "Y": 60
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 118,
+      "Y": 398
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 73,
+      "Y": 87
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 909.6875,
+      "Y": 81
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 150,
+      "Y": 421
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 73,
+      "Y": 87
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 909.6875,
+      "Y": 81
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 150,
+      "Y": 421
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 130,
+      "Y": 88
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 909.6875,
+      "Y": 81
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 150,
+      "Y": 421
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 909.6875,
+      "Y": 81
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 150,
+      "Y": 421
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 0,
+      "Y": 0
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 749.6875,
+      "Y": 77
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 0,
+      "Y": 425
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1,
+      "Y": 71
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 749.6875,
+      "Y": 77
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 0,
+      "Y": 425
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 749.6875,
+      "Y": 77
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 0,
+      "Y": 425
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "NewModel",
+        "Properties": [
+          {
+            "Name": "NewProperty",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 0,
+      "Y": 0
+    },
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 749.6875,
+      "Y": 77
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 0,
+      "Y": 425
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ],
+  [
+    {
+      "Model": {
+        "Name": "Movie",
+        "Properties": [
+          {
+            "Name": "Title",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Director",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Year",
+            "Type": "int",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Genre",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": true,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 749.6875,
+      "Y": 77
+    },
+    {
+      "Model": {
+        "Name": "ComedyMovie",
+        "Properties": [
+          {
+            "Name": "FunnyLevel",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": "Movie"
+      },
+      "X": 0,
+      "Y": 425
+    },
+    {
+      "Model": {
+        "Name": "Cinema",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Movies",
+            "Type": "Movie",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "City",
+            "Type": "City",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 544,
+      "Y": 700
+    },
+    {
+      "Model": {
+        "Name": "City",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cinemas",
+            "Type": "Cinema",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Country",
+            "Type": "Country",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": true
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 1000,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "RegionCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1150
+    },
+    {
+      "Model": {
+        "Name": "CapitalCity",
+        "Properties": [],
+        "IsAbstract": false,
+        "ParentClassName": "City"
+      },
+      "X": 125,
+      "Y": 1500
+    },
+    {
+      "Model": {
+        "Name": "Country",
+        "Properties": [
+          {
+            "Name": "Name",
+            "Type": "string",
+            "IsModelType": false,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "Cities",
+            "Type": "RegionCity",
+            "IsModelType": true,
+            "IsCollection": true,
+            "IsNullable": false,
+            "ForeignKey": false
+          },
+          {
+            "Name": "CapitalCity",
+            "Type": "CapitalCity",
+            "IsModelType": true,
+            "IsCollection": false,
+            "IsNullable": false,
+            "ForeignKey": false
+          }
+        ],
+        "IsAbstract": false,
+        "ParentClassName": null
+      },
+      "X": 550,
+      "Y": 1800
+    }
+  ]
+]
